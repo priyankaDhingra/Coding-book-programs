@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Fulltime/src/Stack&apos; to &apos;Stack.java&apos;" description="Rename resource &apos;Stack&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Stack" name="Stack.java" stamp="1454025283046" updateReferences="true"/>
+</session>

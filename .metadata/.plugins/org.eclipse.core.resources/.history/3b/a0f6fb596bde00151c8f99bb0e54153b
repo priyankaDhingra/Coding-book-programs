@@ -1,0 +1,77 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+	static ArrayList<Integer> primes = new ArrayList<Integer>();
+
+	public static void main(String[] args) {
+		/*
+		 * Enter your code here. Read input from STDIN. Print output to STDOUT.
+		 * Your class should be named Solution.
+		 */
+
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		System.out.println(T);
+		int[] a = new int[T];
+		int val = 0;
+		int i = 0;
+		while (i < T) {
+			a[i] = sc.nextInt();
+			i++;
+		}
+		int curValue = 50;
+		primes.add(2);
+		gen_primes(3, curValue);
+		i = 0;
+		while (i < a.length) {
+		
+			for (int j = 0; j <a[i]; j++) {
+				
+				int pnsq = (int) Math.pow((primes.get(j)),2);
+				int pnplus1 = (int) Math.pow(((primes.get(j))+1),j);
+				int pnminus1 = (int) Math.pow(((primes.get(j))-1),j);
+				int r = (pnplus1+pnminus1)%pnsq;
+				System.out.println(pnsq+" , "+pnplus1+" , "+pnminus1+" : "+r);
+				if (r > a[i]) {
+					val = j - 1;
+					System.out.println(val);
+					break;
+				}
+				if (j > curValue) {
+					gen_primes(j, 2 * curValue);
+					curValue = 2 * curValue;
+				}
+
+			}
+			i++;
+		}
+		System.out.println(val);
+	}
+
+	static void gen_primes(int beg, int m) {
+		int flag = 0;
+		int n = beg;
+
+		while (n < m) {
+			for (int i = 2; i < Math.sqrt(n); i++) {
+			
+				if (n % i == 0) {
+					flag = 1;
+					break;
+				}
+				flag = 0;
+			}
+			if (flag == 0) {
+				primes.add(n);
+				//System.out.println(n);
+				flag = 0;
+			}
+			n++;
+		}
+
+	}
+}

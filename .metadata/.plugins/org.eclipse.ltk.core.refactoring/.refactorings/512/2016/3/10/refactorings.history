@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;QuickInsSort.java&apos; to &apos;Fulltime/src/(default package)&apos;&#x0A;- Original project: &apos;512&apos;&#x0A;- Destination element: &apos;Fulltime/src/(default package)&apos;&#x0A;- Original element: &apos;me.pd.test.QuickInsSort.java&apos;" description="Copy compilation unit" destination="=Fulltime/src&lt;" element1="/src&lt;me.pd.test{QuickInsSort.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1456843456763" units="1" version="1.0"/>
+</session>

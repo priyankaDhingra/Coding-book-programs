@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.image.ReplicateScaleFilter"/>
+<fullyQualifiedTypeName name="javax.swing.RepaintManager"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="me.pd.test.Node"/>
+<fullyQualifiedTypeName name="me.pd.test.LinkedListImpl"/>
+<fullyQualifiedTypeName name="me.pd.test.util.LinkedListNode"/>
+<fullyQualifiedTypeName name="me.pd.test.util.Tree"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="me.pd.test.util.TreeUtil"/>
+<fullyQualifiedTypeName name="me.pd.test.util.TreeUtil.traversals"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="me.pd.test.intrface.QueueItem"/>
+<fullyQualifiedTypeName name="me.pd.test.codeint.QuickInsertQueue"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="me.pd.test.codeint.QuickNextQueue"/>
+<fullyQualifiedTypeName name="me.pd.test.codeint.QItm"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

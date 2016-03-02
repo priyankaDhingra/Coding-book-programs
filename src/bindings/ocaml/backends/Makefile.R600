@@ -1,0 +1,2 @@
+TARGET := R600
+include Makefile.common

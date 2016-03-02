@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;optzr/src/livevar.cc&apos; to &apos;livevar.cpp&apos;" description="Rename resource &apos;livevar.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/livevar.cc" name="livevar.cpp" stamp="1418588278691" updateReferences="true"/>
+</session>

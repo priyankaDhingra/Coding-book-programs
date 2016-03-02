@@ -1,0 +1,24 @@
+12:31:51 **** Build of configuration Debug for project optimzr ****
+make all 
+Building file: ../hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello.d" -MT"hello.d" -o "hello.o" "../hello.c"
+gcc: warning: couldn't understand kern.osversion '14.0.0
+../hello.c: In function 'main':
+../hello.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../hello.c
+ 
+Building file: ../optlv.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"optlv.d" -MT"optlv.d" -o "optlv.o" "../optlv.c"
+gcc: warning: couldn't understand kern.osversion '14.0.0
+../optlv.c:7:20: fatal error: iostream: No such file or directory
+ #include <iostream>
+                    ^
+compilation terminated.
+make: *** [optlv.o] Error 1
+
+12:31:51 Build Finished (took 115ms)
+

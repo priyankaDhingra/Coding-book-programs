@@ -1,0 +1,85 @@
+package me.pd.test;
+
+public class QuickInsSort {
+	static int K = 100;
+
+
+	static void quicksort(int A[], int p, int r) {
+	    if (p < r - 1) {
+	        int q = partition(A, p, r);
+	        quicksort(A, p, q);
+	        quicksort(A, q + 1, r);
+	    }
+	}
+
+	static void modified_quicksort(int A[], int p, int r) {
+	    limited_quicksort(A, p, r, K);
+	    insertion_sort(A, p, r);
+	}
+
+	static void limited_quicksort(int A[], int p, int r, int treshold) {
+	    if (r - p > treshold) {
+	        int q = partition(A, p, r);
+	        limited_quicksort(A, p, q, treshold);
+	        limited_quicksort(A, q + 1, r, treshold);
+	    }
+	}
+
+	static int partition(int A[], int p, int r) {
+	    int x, i, j, tmp;
+
+	    x = A[r - 1];
+	    i = p;
+
+	    for (j = p; j < r - 1; j++) {
+	        if (A[j] <= x) {
+	            tmp = A[i];
+	            A[i] = A[j];
+	            A[j] = tmp;
+	            i++;
+	        }
+	    }
+
+	    tmp = A[i];
+	    A[i] = A[r - 1];
+	    A[r - 1] = tmp;
+
+	    return i;
+	}
+
+	static void insertion_sort(int A[], int p, int r) {
+	    int i, j, key;
+
+	    for (j = p + 1; j < r; j++) {
+	        key = A[j];
+	        for (i = j - 1; i >= p && A[i] > key; i--) {
+	            A[i + 1] = A[i];
+	        }
+	        A[i + 1] = key;
+	    }
+	}
+	public static void main(String []args){
+		//int arr[]={2,3,4,1,5,6,7,8,9,10};
+		int [] arr = new int[10000];               // Random 10000
+	    for (int a = 0; a < arr.length; a++) {
+	       arr [a] = (int) (a);
+	    }
+	    System.out.println("array made");  
+		long time1 = System.nanoTime();
+		  System.out.println("time1 started");  
+		modified_quicksort(arr, 0, K);
+		
+		long time2 = System.nanoTime();
+		System.out.println("time2 ended"); 
+		long timeTaken = time2 - time1;  
+		System.out.println("Time taken modified_quicksort " + timeTaken + " ns");  
+		
+		long time3 = System.nanoTime();
+		quicksort(arr, 0, K);
+		long time4 = System.nanoTime();
+		long timeTaken1 = time4 - time3;  
+		System.out.println("Time taken " + timeTaken1 + " ns");  
+
+		
+	}
+}

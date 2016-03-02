@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="str" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="true" key="wholeword"/>
+		<list key="findhistory">
+			<item value="string"/>
+			<item value="output"/>
+			<item value="csoutput"/>
+			<item value="compressedStr"/>
+			<item value="refChar"/>
+			<item value="str"/>
+			<item value="int"/>
+			<item value="pos"/>
+		</list>
+		<list key="replacehistory">
+			<item value="str"/>
+			<item value="result"/>
+			<item value="output"/>
+			<item value="csoutput"/>
+			<item value="reference"/>
+			<item value="input"/>
+			<item value="long"/>
+			<item value="ptr"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="265" key="DIALOG_WIDTH"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="86" key="DIALOG_Y_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

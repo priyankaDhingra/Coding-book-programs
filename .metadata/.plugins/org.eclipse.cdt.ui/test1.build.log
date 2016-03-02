@@ -1,0 +1,14 @@
+13:42:05 **** Build of configuration Debug for project test1 ****
+make all 
+Building file: ../test1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test1.d" -MT"test1.d" -o "test1.o" "../test1.cpp"
+../test1.cpp:8:1: error: 'main' must return 'int'
+void main()
+^~~~
+int
+1 error generated.
+make: *** [test1.o] Error 1
+
+13:42:09 Build Finished (took 4s.0ms)
+

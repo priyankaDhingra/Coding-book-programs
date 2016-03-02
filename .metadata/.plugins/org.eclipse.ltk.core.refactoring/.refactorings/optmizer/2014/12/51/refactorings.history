@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;optmizer/src/liv.cpp&apos; to &apos;Live.cpp&apos;" description="Rename resource &apos;liv.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/liv.cpp" name="Live.cpp" stamp="1418573675027" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;optmizer/src/Live.cpp&apos; to &apos;ReachingDef.cpp&apos;" description="Rename resource &apos;Live.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Live.cpp" name="ReachingDef.cpp" stamp="1418575414855" updateReferences="true"/>
+</session>

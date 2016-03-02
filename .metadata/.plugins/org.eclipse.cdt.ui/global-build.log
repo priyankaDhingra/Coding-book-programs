@@ -1,0 +1,19 @@
+23:23:39 **** Build of configuration Debug for project optmizer ****
+make all 
+Building file: ../src/inpt/hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu11 libtool -dynamic -MMD -MP -MF"src/inpt/hello.d" -MT"src/inpt/hello.d" -o "src/inpt/hello.o" "../src/inpt/hello.c"
+gcc: warning: couldn't understand kern.osversion '14.0.0
+gcc: error: libtool: No such file or directory
+make: *** [src/inpt/hello.o] Error 1
+13:42:05 **** Build of configuration Debug for project test1 ****
+make all 
+Building file: ../test1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test1.d" -MT"test1.d" -o "test1.o" "../test1.cpp"
+../test1.cpp:8:1: error: 'main' must return 'int'
+void main()
+^~~~
+int
+1 error generated.
+make: *** [test1.o] Error 1

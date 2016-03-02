@@ -1,0 +1,5 @@
+#
+#Sun Dec 14 23:10:32 EST 2014
+Debug_with_LLVM\ with\ Clang\ (MacOSX)/optzr.so=1
+src/livevar.cpp=1
+Debug_with_LLVM\ with\ Clang\ (MacOSX)/src/livevar.bc=1

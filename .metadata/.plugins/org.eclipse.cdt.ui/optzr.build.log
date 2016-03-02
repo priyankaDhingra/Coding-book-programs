@@ -1,0 +1,114 @@
+23:10:31 **** Incremental Build of configuration Debug_with_LLVM with Clang (MacOSX) for project optzr ****
+Info: Internal Builder is used for build
+clang++ -O0 -emit-llvm -g3 -Wall -c -fmessage-length=0 -o src/livevar.bc ../src/livevar.cpp 
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:22:
+/usr/local/include/llvm/ADT/iterator.h:144:68: error: a space is required between consecutive right angle brackets (use '> >')
+    typename WrappedTraitsT = std::iterator_traits<WrappedIteratorT>>
+                                                                   ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:50:8: error: expected identifier or '{'
+  enum : uintptr_t {
+       ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:76:58: error: use of undeclared identifier 'PointerBitMask'
+                         reinterpret_cast<void*>(Value & PointerBitMask));
+                                                         ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:80:32: error: use of undeclared identifier 'IntShift'
+    return (IntType)((Value >> IntShift) & IntMask);
+                               ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:80:44: error: use of undeclared identifier 'IntMask'
+    return (IntType)((Value >> IntShift) & IntMask);
+                                           ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:86:24: error: use of undeclared identifier 'PointerBitMask'
+    assert((PtrWord & ~PointerBitMask) == 0 &&
+                       ^
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:89:33: error: use of undeclared identifier 'PointerBitMask'
+    Value = PtrWord | (Value & ~PointerBitMask);
+                                ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:94:24: error: use of undeclared identifier 'IntMask'
+    assert((IntWord & ~IntMask) == 0 && "Integer too large for field");
+                       ^
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:97:15: error: use of undeclared identifier 'ShiftedIntMask'
+    Value &= ~ShiftedIntMask;     // Remove integer field.
+              ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:98:25: error: use of undeclared identifier 'IntShift'
+    Value |= IntWord << IntShift;  // Set new integer.
+                        ^
+/usr/local/include/llvm/ADT/PointerIntPair.h:104:24: error: use of undeclared identifier 'PointerBitMask'
+    assert((PtrWord & ~PointerBitMask) == 0 &&
+                       ^
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:112:24: error: use of undeclared identifier 'PointerBitMask'
+    assert((PtrWord & ~PointerBitMask) == 0 &&
+                       ^
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:115:24: error: use of undeclared identifier 'IntMask'
+    assert((IntWord & ~IntMask) == 0 && "Integer too large for field");
+                       ^
+/usr/include/assert.h:93:25: note: expanded from macro 'assert'
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+                        ^
+In file included from ../src/livevar.cpp:10:
+In file included from /usr/local/include/llvm/IR/Instruction.h:21:
+In file included from /usr/local/include/llvm/IR/User.h:24:
+In file included from /usr/local/include/llvm/IR/Value.h:19:
+In file included from /usr/local/include/llvm/IR/Use.h:29:
+/usr/local/include/llvm/ADT/PointerIntPair.h:117:35: error: use of undeclared identifier 'IntShift'
+    Value = PtrWord | (IntWord << IntShift);
+                                  ^
+In file included from ../src/livevar.cpp:11:
+In file included from /usr/local/include/llvm/IR/Function.h:22:
+In file included from /usr/local/include/llvm/IR/Argument.h:19:
+In file included from /usr/local/include/llvm/IR/Attributes.h:20:
+In file included from /usr/local/include/llvm/ADT/FoldingSet.h:21:
+/usr/local/include/llvm/Support/Allocator.h:134:70: error: expected expression
+          BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>> {
+                                                                     ^
+/usr/local/include/llvm/Support/Allocator.h:346:2: error: expected a type
+};
+ ^
+/usr/local/include/llvm/Support/Allocator.h:346:2: error: expected class name
+/usr/local/include/llvm/Support/Allocator.h:346:2: error: expected '{' after base class list
+/usr/local/include/llvm/Support/Allocator.h:375:28: error: expected expression
+    auto DestroyElements = [](char *Begin, char *End) {
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+23:10:32 Build Finished (took 921ms)
+
